@@ -34,7 +34,6 @@ export default class Login extends Component {
             email: this.state.email,
             password: this.state.password,
         }
-
         services.loginUser(userData)
             .then(res => {
                 console.log(res);
@@ -55,8 +54,6 @@ export default class Login extends Component {
                         }
                     });
                 }
-
-
             }).catch();
     }
 
@@ -70,7 +67,6 @@ export default class Login extends Component {
     }
 
     render() {
-
         if (localStorage.getItem('token') !== null) {
             this.props.history.push("/home");
         }
@@ -86,7 +82,7 @@ export default class Login extends Component {
                             <Input name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
                         </div>
                         <div className='button'>
-                            <Button type='Submit' variant="contained" color='primary' onClick={this.onClickBtn}>login</Button>
+                            <Button id='loginButton' type='Submit' variant="contained" color='primary' onClick={this.onClickBtn}>login</Button>
                         </div>
                         <div className='errMsg' >
                             {this.state.errors["msg"]}
