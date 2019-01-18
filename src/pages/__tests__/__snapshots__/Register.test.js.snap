@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login should render correctly in "debug" mode 1`] = `
+exports[`Register should render correctly in "debug" mode 1`] = `
 <div
   className="maindiv"
 >
@@ -9,9 +9,9 @@ exports[`Login should render correctly in "debug" mode 1`] = `
   >
     <WithStyles(Typography)
       color="primary"
-      id="loginT"
+      id="registerT"
     >
-      Login
+      Register
     </WithStyles(Typography)>
     <div
       className="hold"
@@ -20,24 +20,56 @@ exports[`Login should render correctly in "debug" mode 1`] = `
         className="input"
       >
         <Input
-          id="userEmail"
-          label="email"
-          name="email"
+          label="username"
+          name="username"
           onChange={[Function]}
-          placeholder="enter email"
+          placeholder="username"
           type="text"
+        />
+        <div
+          className="msg"
         />
       </div>
       <div
         className="input"
       >
         <Input
-          id="userPassword"
+          label="email"
+          name="email"
+          onChange={[Function]}
+          placeholder="enter email"
+          type="text"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="input"
+      >
+        <Input
           label="password"
           name="password"
           onChange={[Function]}
           placeholder="enter password"
           type="password"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="input"
+      >
+        <Input
+          label="confirm password"
+          name="rpassword"
+          onChange={[Function]}
+          placeholder="confirm password"
+          type="password"
+        />
+        <div
+          className="msg"
         />
       </div>
       <div
@@ -45,50 +77,11 @@ exports[`Login should render correctly in "debug" mode 1`] = `
       >
         <WithStyles(Button)
           color="primary"
-          id="loginButton"
           onClick={[Function]}
-          type="Submit"
           variant="contained"
         >
-          login
+          Submit
         </WithStyles(Button)>
-      </div>
-      <div
-        className="errMsg"
-      />
-      <div
-        className="socialLogin"
-      >
-        <LoginWithGoogle
-          loginWithGoogle={[Function]}
-        />
-        <LoginWithFacebook
-          loginWithGoogle={[Function]}
-        />
-      </div>
-      <div
-        id="spanDiv"
-      >
-        <span
-          className="reg"
-        >
-          New User? 
-          <a
-            href="/register"
-          >
-            register
-          </a>
-        </span>
-        <span
-          className="psw"
-        >
-          Forgot 
-          <a
-            href="/forgetpassword"
-          >
-            password?
-          </a>
-        </span>
       </div>
     </div>
   </WithStyles(Card)>

@@ -24,6 +24,7 @@ export default class Login extends Component {
     }
 
     getInputData(data,event) {
+        // console.log(event.target.name);    
         this.setState({
             [event.target.name]: data
         });
@@ -36,7 +37,7 @@ export default class Login extends Component {
         }
         services.loginUser(userData)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.status === 200) {
                     this.props.history.push("/home");
                 }
@@ -67,6 +68,8 @@ export default class Login extends Component {
     }
 
     render() {
+        console.log(this.state,'<<');
+        
         if (localStorage.getItem('token') !== null) {
             this.props.history.push("/home");
         }
@@ -76,10 +79,10 @@ export default class Login extends Component {
                     <Typography id='loginT' color='primary'>Login</Typography>
                     <div className='hold'>
                         <div className='input'>
-                            <Input name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
+                            <Input id='userEmail' name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
                         </div>
                         <div className='input'>
-                            <Input name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
+                            <Input id='userPassword' name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
                         </div>
                         <div className='button'>
                             <Button id='loginButton' type='Submit' variant="contained" color='primary' onClick={this.onClickBtn}>login</Button>

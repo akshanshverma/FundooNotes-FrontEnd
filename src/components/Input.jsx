@@ -8,7 +8,7 @@ export default class Input extends Component {
     }
 
     sendDataToParent(event){    
-        this.props.onChange(event.target.value)
+        this.props.onChange(event.target.value,event)
     }
 
     render(){
