@@ -121,23 +121,23 @@ export default class Register extends Component {
                     <Typography id='registerT' color='primary'>Register</Typography>
                     <div className='hold'>
                         <div className='input'>
-                            <Input name={'username'} type={'text'} placeholder={'username'} label={'username'} onChange={this.getInputData} />
+                            <Input id='username' name={'username'} type={'text'} placeholder={'username'} label={'username'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["username"]}</div>
                         </div>
                         <div className='input'>
-                            <Input name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
+                            <Input id="email" name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["email"]}</div>
                         </div>
                         <div className='input'>
-                            <Input name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
+                            <Input id="password" name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["password"]}</div>
                         </div>
                         <div className='input'>
-                            <Input name={'rpassword'} type={'password'} placeholder={'confirm password'} label={'confirm password'} onChange={this.getInputData} />
+                            <Input id="rpassword" name={'rpassword'} type={'password'} placeholder={'confirm password'} label={'confirm password'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["rpassword"]}</div>
                         </div>
                         <div className='button'>
-                            <Button variant="contained" color='primary' onClick={this.onClickbtn}>Submit</Button>
+                            <Button id="registerSubmitButton" variant="contained" color='primary' onClick={this.onClickbtn}>Submit</Button>
                         </div>
                     </div>
                 </Card>
