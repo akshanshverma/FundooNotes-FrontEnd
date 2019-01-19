@@ -32,10 +32,6 @@ export default class Profile extends Component {
                     });
 
                 }
-                if (res.status === 220) {
-
-                }
-
             }).catch();
     }
 
@@ -49,9 +45,6 @@ export default class Profile extends Component {
                         'email': "",
                     });
                     this.props.history.push("/login");
-                }
-                if (res.status === 220) {
-
                 }
             }).catch();
     }

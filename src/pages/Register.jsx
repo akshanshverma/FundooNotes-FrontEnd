@@ -37,7 +37,6 @@ export default class Register extends Component {
 
 
     dataValidation() {
-
         let fields = this.state;
         let errors = {};
         let formIsValid = true;

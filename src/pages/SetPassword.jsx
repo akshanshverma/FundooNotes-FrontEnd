@@ -54,7 +54,6 @@ export default class SetPassword extends Component {
     }
 
     dataValidation() {
-        debugger;
         let fields = this.state;
         let errors = {};
         let formIsValid = true;
