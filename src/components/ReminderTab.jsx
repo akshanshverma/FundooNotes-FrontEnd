@@ -42,7 +42,7 @@ export default class ReminderTab extends Component {
         this.props.setDate(newDate);
     }
 
-    nextWeek = () => {debugger;
+    nextWeek = () => {
         var date = moment().add(7, 'days').calendar();
         var time = moment().format('LT');
         this.props.setDate(date + ", " + time);

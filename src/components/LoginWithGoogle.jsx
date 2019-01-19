@@ -7,7 +7,7 @@ export default class LoginWithGoogle extends Component {
     responseGoogle = (response) => {
         // debugger;
         if (response.error === 'popup_closed_by_user') {
-
+            return null;
         } else {
             var userData = {
                 'email': response.w3.U3,

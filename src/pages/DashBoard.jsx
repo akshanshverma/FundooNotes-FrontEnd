@@ -100,9 +100,6 @@ export default class DashBoard extends Component {
                 if (res.status === 200) {
                     this.props.history.push("/login");
                 }
-                if (res.status === 220) {
-
-                }
             }).catch();
     }
 
