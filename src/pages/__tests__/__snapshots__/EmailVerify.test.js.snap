@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailVerify should render correctly in "debug" mode emailVerify 1`] = `
+<div
+  className="maindiv"
+>
+  <WithStyles(Card)
+    id="card"
+  >
+    <div>
+      <WithStyles(Typography)
+        color="primary"
+        id="loginT"
+      >
+        Account Verification
+      </WithStyles(Typography)>
+      <div
+        className="hold"
+      >
+        <div
+          className="button"
+        >
+          <WithStyles(Button)
+            color="primary"
+            onClick={[Function]}
+            type="Submit"
+            variant="contained"
+          >
+            Activate Account
+          </WithStyles(Button)>
+        </div>
+        <div
+          className="errMsg"
+        />
+      </div>
+    </div>
+  </WithStyles(Card)>
+</div>
+`;

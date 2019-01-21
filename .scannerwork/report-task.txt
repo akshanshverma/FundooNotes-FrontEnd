@@ -1,6 +1,6 @@
-projectKey=fundoonotes
+projectKey=806df7b5d22609af678fff889f5a8aaeede0ce78
 serverUrl=http://localhost:9000
 serverVersion=6.7.1.35068
-dashboardUrl=http://localhost:9000/dashboard/index/fundoonotes
-ceTaskId=AWhlYvx61RxIQUolSJgH
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWhlYvx61RxIQUolSJgH
+dashboardUrl=http://localhost:9000/dashboard/index/806df7b5d22609af678fff889f5a8aaeede0ce78
+ceTaskId=AWhvB0DkA04buVqAWi3s
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWhvB0DkA04buVqAWi3s

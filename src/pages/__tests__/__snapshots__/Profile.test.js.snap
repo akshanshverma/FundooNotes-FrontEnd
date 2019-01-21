@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile should render correctly in "debug" mode Profile 1`] = `
+<div
+  className="maindiv"
+>
+  <WithStyles(Card)
+    id="card"
+  >
+    <div
+      className="userData"
+    >
+      <div
+        className="username"
+      >
+        username: 
+      </div>
+      <div
+        className="email"
+      >
+        email: 
+      </div>
+    </div>
+    <div
+      className="logoutButton"
+    >
+      <WithStyles(Button)
+        color="primary"
+        id="logout"
+        onClick={[Function]}
+        type="Submit"
+        variant="contained"
+      >
+        logout
+      </WithStyles(Button)>
+    </div>
+  </WithStyles(Card)>
+</div>
+`;

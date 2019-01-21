@@ -47,9 +47,9 @@ export default class SetPassword extends Component {
             }).catch();
     }
 
-    getInputData(data,event) {
+    getInputData(event) {
         this.setState({
-            [event.target.name]: data
+            [event.target.name]: event.target.value
         });
     }
 
@@ -112,15 +112,15 @@ export default class SetPassword extends Component {
                     <div className='hold'>
 
                         <div className='input'>
-                            <Input name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
+                            <Input id='resetPassword' name={'password'} type={'password'} placeholder={'enter password'} label={'password'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["password"]}</div>
                         </div>
                         <div className='input'>
-                            <Input name={'rpassword'} type={'password'} placeholder={'confirm password'} label={'confirm password'} onChange={this.getInputData} />
+                            <Input id='resetRPassword' name={'rpassword'} type={'password'} placeholder={'confirm password'} label={'confirm password'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["rpassword"]}</div>
                         </div>
                         <div className='button'>
-                            <Button variant="contained" color='primary' onClick={this.onClickbtn}>save</Button>
+                            <Button id='saveButton' variant="contained" color='primary' onClick={this.onClickbtn}>save</Button>
                         </div>
                         <div className='errMsg' >
                             {this.state.errors["linkError"]}

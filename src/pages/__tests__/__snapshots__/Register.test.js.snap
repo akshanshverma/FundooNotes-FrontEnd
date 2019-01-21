@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register should render correctly in "debug" mode 1`] = `
+<div
+  className="maindiv"
+>
+  <WithStyles(Card)
+    id="card"
+  >
+    <WithStyles(Typography)
+      color="primary"
+      id="registerT"
+    >
+      Register
+    </WithStyles(Typography)>
+    <div
+      className="hold"
+    >
+      <div
+        className="input"
+      >
+        <Input
+          id="rUsername"
+          label="username"
+          name="username"
+          onChange={[Function]}
+          placeholder="username"
+          type="text"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="input"
+      >
+        <Input
+          id="rEmail"
+          label="email"
+          name="email"
+          onChange={[Function]}
+          placeholder="enter email"
+          type="text"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="input"
+      >
+        <Input
+          id="rPassword"
+          label="password"
+          name="password"
+          onChange={[Function]}
+          placeholder="enter password"
+          type="password"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="input"
+      >
+        <Input
+          id="rRPassword"
+          label="confirm password"
+          name="rpassword"
+          onChange={[Function]}
+          placeholder="confirm password"
+          type="password"
+        />
+        <div
+          className="msg"
+        />
+      </div>
+      <div
+        className="button"
+      >
+        <WithStyles(Button)
+          color="primary"
+          id="registerSubmitButton"
+          onClick={[Function]}
+          variant="contained"
+        >
+          Submit
+        </WithStyles(Button)>
+      </div>
+    </div>
+  </WithStyles(Card)>
+</div>
+`;

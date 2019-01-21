@@ -316,10 +316,10 @@ export default class DashBoard extends Component {
 
     render() {
 
-        if (localStorage.getItem('token') === null) {
-            this.props.history.push("/login");
-            return;
-        }
+        // if (localStorage.getItem('token') === null) {
+        //     this.props.history.push("/login");
+        //     return;
+        // }
 
         var notes = (this.state.noteData
             .filter(note => {

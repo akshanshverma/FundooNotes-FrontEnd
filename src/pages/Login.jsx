@@ -23,10 +23,10 @@ export default class Login extends Component {
         this.onClickBtn = this.onClickBtn.bind(this);
     }
 
-    getInputData(data,event) {
+    getInputData(event) {
         // console.log(event.target.name);    
         this.setState({
-            [event.target.name]: data
+            [event.target.name]: event.target.value
         });
     }
 

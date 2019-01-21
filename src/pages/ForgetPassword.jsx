@@ -21,9 +21,9 @@ export default class ForgetPassword extends Component {
         this.onClickBtn = this.onClickBtn.bind(this);
     }
 
-    getInputData(data,event) {
+    getInputData(event) {
         this.setState({
-            [event.target.name]: data
+            [event.target.name]: event.target.value
         });
     }
 
@@ -62,7 +62,7 @@ export default class ForgetPassword extends Component {
                     <Typography id='loginT' color='primary'>Forget Password</Typography>
                     <div className='hold'>
                         <div className='inputRsP'>
-                            <Input name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
+                            <Input id='emailForPasswordReset' name={'email'} type={'text'} placeholder={'enter email'} label={'email'} onChange={this.getInputData} />
                             <div className='msg' >{this.state.errors["email"]}</div>
                         </div>
                         
